@@ -1,0 +1,48 @@
+README
+
+OpenMRS, açık kaynaklı bir elektronik sağlık kayıt sistemidir. Sağlık hizmeti sunan
+kuruluşlar için hasta verilerini yönetmek, saklamak ve paylaşmak amacıyla kullanılır.
+OpenMRS, özellikle düşük gelirli ülkelerde sağlık hizmetlerini geliştirmek amacıyla
+tasarlanmıştır. Bu platform, tıbbi kayıtları dijitalleştirme, hasta takibi, tedavi planlaması ve
+sağlık verilerinin analizi gibi önemli işlevleri destekler.
+OpenMRS Projesi açık kaynaklıdır ve bir topluluk tarafından geliştirilen bir projedir.
+Projede yazılım geliştiricileri, sağlık uzmanları ve gönüllüler bir araya gelir ve sağlık
+hizmetlerinin veri yönetimini iyileştirmek için çalışırlar. OpenMRS, kullanıcı dostu bir arabirim
+sunar ve farklı sağlık hizmeti sunan kuruluşlar için uyarlanabilir.
+
+Proje Detayları:
+1. Sisteme Giriş (Login) Hatalarını Kontrol Etmek.
+2. Kullanıcı, uygulamaya giriş yapabilmeli.
+3. Kullanıcı, sistemden güvenli bir şekilde çıkış yapabilmeli.
+4. Kullanıcı, hasta bilgilerini girerek sisteme hasta kaydı yapabilmeli.
+5. Kullanıcı, hesap ayarlarına (My Account) ulaşabilecek bir arayüze sahip olmalı.
+6. Doktor, hastaları listeleyebilmeli ve belirli bir hastayı search yapabilmeli.
+7. Doktor, belirli bir hastayı sistemden silebilmeli.
+8. Doktor, tüm hastaları listeleyebilmeli.
+9. Hasta Kayıtlarını Birleştirme (Merge).
+10. Hasta Randevusu Alırken Yanlış Saat Dilimi.
+
+Gereksinimler:
+I.Windows 10/11
+II.JDK 1.8SE
+III.İntelij IDEA
+IV.org.seleniumhq.selenium:selenium-java:4.11.0
+V.org.slf4j:slf4j-nop:1.7.30
+VI.commons-io:commons-io:2.11.0
+
+Sürüm:
+1.0.0
+
+QA Lead:
+Burhan Şengül : burhseng@gmail.com
+
+Collaborators:
+Fatihhan Karahanlı : fatihhan.karahanli@gmail.com
+Ramazan İnce : inceliramazan80@gmail.com
+Zafer Cansız : zfrcnsz1@gmail.com
+Şeyma Askerzade : 4seyma@gmail.com
+Burcu Elaldı: burcuert.el@gmail.com
+Engin Elaldı : engin.elaldi054@gmail.com
+
+Kullanacağımız environment https://openmrs.org adresidir. Bu environmentin alt alanı
+olan https://demo.openmrs.org/ ‘ta çalışmış olacağız.
