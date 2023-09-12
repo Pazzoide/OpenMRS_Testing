@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="mySuit" >
+
+    <test name="myTest1">
+        <parameter name="BrowserType" value="chrome"></parameter>
+
+
+
+        <classes>
+
+            <class name="US_MRS_10.US_MRS_10"> </class>
+        </classes>
+    </test>
+
+
+
+</suite>
+

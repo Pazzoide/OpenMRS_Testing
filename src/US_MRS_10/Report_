@@ -1,0 +1,52 @@
+TEST CASE REPORT
+Test Case ID:
+    US_MRS_10 - TC_MRS_10
+
+
+Test Case Title :  Yanlış saat diliminde iken hasta randevusu alırma
+Explanation: Bir kullanıcı olarak, hasta randevusu oluştururken sistem saatinin GMT+0 dışında 
+bir saate ayarlandığında verilen hata mesajını görebilmeliyim.
+
+ Test Case Steps:
+ 	 Kullanıcı sistem saat dilimi UTC+0 (GMT+0) dışında bir saate ayarlıdır.
+	 Kullanıcı, hasta randevusu almaya çalışır.
+	 Kullanıcı randevu almak için "Randevu Planlama" [Appointment Scheduling] butonuna tıklar.
+	 Kullanıcı, "Randevuları Yönet" [Manage Appointments] butonuna tıklar.
+	 Kullanıcı, hasta kayıt sırasında oluşturduğu ID veya ismi search input alanına girer.
+ 	 Kullanıcı, karşısına çıkan listedeki hastayı tıklayarak seçer.
+	 Kullanıcı, "Your computer is not set to the right time zone. Please change to Coordinated 
+        Universal Time and then close and restart your browser to assure proper scheduling 	 
+       functionality." hata mesajını görür.
+
+Expected Result :
+	 Kullanıcı sistem saat dilimini UTC+0 (GMT+0) dışında ayarlı olmalı.
+	 Kullanıcı randevu almak için "Randevu Planlama" [Appointment Scheduling] düğmesine tıklamalı.
+	 Kullanıcı randevuları yönetmek için [Manage Appointments] düğmeye tıklamalı.
+	 Kullanıcı hasta bilgilerini search input alanına girdiğinde, ilgili hasta sonuçlarının listelendiğini görmeli.
+	 Kullanıcı listeden hastayı seçtiğinde, hastanın ayrıntılarına veya randevu düzenlemelerine erişebilmeli.
+	 Kullanıcı, sistem saat dilimi UTC+0 (GMT+0) dışında olduğunda randevu işlemi yapmaya çalıştığında "Your 
+	computer is not set to the right time zone. Please change to  Coordinated Universal Time and then 
+	close and restart your browser to assure proper scheduling 	 functionality." hata mesajını görmeli.
+
+
+Actual Results:
+         Sistem saat dilimini UTC+0 (GMT+0) dışında ayarlandı.
+	 Randevu almak için "Randevu Planlama" [Appointment Scheduling] düğmesine tıklandı.
+	 Randevuları yönetmek için bu düğmeye tıklandı.
+	 Hasta bilgilerini search input alanına girdiğinde, ilgili hasta sonuçlarının listelendiği görüldü.
+	 Listeden hastayı seçtiğinde, hastanın ayrıntılarına veya randevu düzenlemelerine erişildi.
+	 Sistem saat dilimi UTC+0 (GMT+0) dışında olduğunda randevu işlemi yapmaya çalıştığında "Your computer 
+	is not set to the right time zone. Please change to Coordinated Universal Time and then close and restart 
+	your browser to assure proper scheduling  functionality." hata mesajını görüldü.
+
+Test Pass/Fail: Pass
+
+Comments:
+	Test, beklendiği gibi geçti. Hasta randevusu alınmaya çalışıldı. Randevu almak için 
+"Randevu Planlama" [Appointment Scheduling] butonuna tıklandı. "Randevuları Yönet" [Manage 	Appointments] butonuna tıklandı,
+ hasta kayıt sırasında oluşturduğu ID veya ismi search input alanına girildi, karşısına çıkan listedeki hastayı tıklayarak seçti 
+ve "Your 	computer is not set to the right time zone. Please change to Coordinated Universal Time and then close and restart
+ your browser to assure proper scheduling 	 	functionality." hata mesajını gördü. böylece sistem 
+saat dilimi UTC+0 (GMT+0) dışında bir saate ayarlı iken alması gereken hata mesajını almış oldu.
+
+Testter : [ RAMAZAN İNCE ]
