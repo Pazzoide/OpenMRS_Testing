@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BaseDriverParameter {
-    public WebDriver driver;
+    public static WebDriver driver;
     public static WebDriverWait wait;
     @BeforeClass
     @Parameters("BrowserType")
