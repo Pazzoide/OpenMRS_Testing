@@ -1,0 +1,40 @@
+TEST CASE REPORT
+Test Case ID: US_OMRS_09
+
+Test Case Title:  Hasta Kayıtlarını Birleştirme (Merge)
+
+Test Case Steps:
+ 1- Doktor, US_OMRS_04'teki kayıt işlemini iki kez gerçekleştirir ve sonuçta alınan ID'leri kaydeder (ID1 ve ID2).
+ 2- Doktor, Login sayfasındadır.
+ 3- Doktor, [Data Management] linkine tıklar.
+ 4- Doktor, [Merge Patient Electronic Records] butonuna tıklar.
+ 5- Doktor, üst üste bulunan iki adet Hasta ID (Patient ID) alanına ID1 ve ID2 değerlerini girer.
+ 6- Doktor, [Continue] butonuna tıklar.
+ 7- Doktor, birleştirme işlemini hangi hastada yapacağını seçer (tıklar).
+ 8- Doktor, "Yes, Continue" butonuna tıklar.
+ 9- Doktor, sağ üstteki Patient ID kısmında ID1 ve ID2 numaralarını görür.
+
+Expected Results:
+1- Doktor, başarıyla iki hasta kaydı oluşturur ve bu kayıtların ID'lerini alır.
+2- Doktor, oturum açma sayfasında başarılı bir şekilde bulunmaktadır.
+3- Doktor, [Data Management] bağlantısına başarılı bir şekilde tıklar ve yönetim sayfasına yönlendirilir.
+4- Doktor, [Merge Patient Electronic Records] butonuna başarılı bir şekilde tıklar ve birleştirme işlemi sayfası açılır.
+5- Doktor, ID1 ve ID2 değerlerini başarılı bir şekilde girdikten sonra bu ID'ler hasta kimlikleri olarak görünmelidir.
+6- Doktor, [Continue] butonuna tıkladığında "Merging cannot be undone! Please check records before continuing." şeklinde bir uyarı görülmelidir.
+7- Doktor, birleştirme işlemini yapacağı hasta kaydını başarılı bir şekilde seçer.
+8- Doktor, "Yes, Continue" butonuna tıkladığında birleştirme işlemi başarılı bir şekilde gerçekleşir.
+9- Doktor, sağ üst köşede Patient ID kısmında ID1 ve ID2 numaralarını başarılı bir şekilde görüntüler.
+
+Actual Results:
+1- US_OMRS_04 e göre işlemler 2 kez tekrarlandı ve 2 hasta kayıtı oluşturuldu.
+2- Olusturulan 2 hasta kayıtı Doktor tarafından birleştirildi.
+3- Birleştirilen hasta ID leri üzerinde birleşim yapılan hastanın kayıtlarında görüldü.
+
+Test Pass/Fail: Pass
+
+Comments:
+Beklenen sonuçlar ile gerçekleşen sonuçlar örtüştü. Test senaryosuna uygun olarak
+Kolay bir reçete yönetimi sağlayabilmek adına hasta kayıtlarının sağlıklı şekilde birleştirilebildiği
+doğrulandı.
+
+Tester : Zafer Cansız
